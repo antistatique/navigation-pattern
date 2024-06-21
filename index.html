@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>
+			Menu
+		</title>
+	</head>
+	<body>
+		<style>
+			:root{
+				--color-brand: #ff00aa;
+				--color-link: #ffffff;
+			}
+			
+			body{
+				width: 100%;
+				font-family: monospace;
+				font-size: 16px;
+			}
+			nav{
+				width: 100%;
+				border:5px solid var(--color-brand);
+				border-top: none;
+			}
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			nav a{
+				text-decoration: none;
+			}
+			nav a:hover{
+				text-decoration: underline;
+			}
+			.nav-1, .nav-2{
+				display: flex;
+				gap: 1em;
+				width: 100%;
+				/* justify-content: space-between; */
+			}
+			.nav-1 li, .nav-2 ul{
+				flex-grow: 1;
+				width: 33%;
+			}
+			.nav-1 li{
+				background-color: var(--color-brand); 
+			}
+			.nav-1 li a{
+				color:var(--color-link);
+			}
+			.nav-2 li a{
+				color: var(--color-brand);
+			}
+			li a{
+				padding: 0.7em 1em;
+				display: block;
+			}
+			.nav-2{
+				display: none;
+				border-top:5px solid var(--color-brand);
+			}
+			nav:hover .nav-2{
+				display: flex;
+			}
+		</style>
+		<nav>
+			<ul class="nav-1">
+				<li><a href="#">S’informer</a></li>
+				<li><a href="#">Se défendre</a></li>
+				<li><a href="#">Agir</a></li>
+			</ul>
+			<div class="nav-2">
+				<ul>
+					<li><a href="#">Transports</a></li>
+					<li><a href="#">Télécoms</a></li>
+					<li><a href="#">Santé</a></li>
+					<li><a href="#">Habitat</a></li>
+					<li><a href="#">Environnement</a></li>
+					<li><a href="#">Droits</a></li>
+					<li><a href="#">Assurances</a></li>
+					<li><a href="#">Arnaque</a></li>
+					<li><a href="#">Argent</a></li>
+					<li><a href="#">Alimentation</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Questions-réponses</a></li>
+					<li><a href="#">Lettres modèles</a></li>
+					<li><a href="#">Conseil personnalisé</a></li>
+					<li><a href="#">Protection juridique</a></li>
+					<li><a href="#">Témoigner et dénoncer</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Devenir Membre</a></li>
+					<li><a href="#">Devenir bénévole</a></li>
+					<li><a href="#">Faire un don</a></li>
+					<li><a href="#">Le magazine</a></li>
+					<li><a href="#">La Lettre</a></li>
+				</ul>
+			</div>
+		</nav>
+	</body>
+</html>
